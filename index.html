@@ -8,13 +8,14 @@
 </head>
 <body>
     <header>
-        <h1>Personal Webpage</h1>
+        <h1>Brennen Roetzel:<br>Marketing Professional</h1>
         <nav>
             <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#projects">Personal Projects</a></li>
+                <li><a href="#about" data-description="The collection of my professional talents and skill areas, developed over the past five years.">About Me</a></li>
+                <li><a href="#portfolio" data-description="A selection from my body of work, projects and engagements that I led and orchestrated across multiple, cross functional teams.">Portfolio</a></li>
+                <li><a href="#projects" data-description="Individual pursuits that align with the creative and productive pillars of marketing.">Personal Projects</a></li>
             </ul>
+            <div class="description" id="description"></div>
         </nav>
     </header>
 
@@ -105,5 +106,16 @@
     <footer>
         <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(item => {
+            item.addEventListener('mouseover', event => {
+                document.getElementById('description').innerText = item.getAttribute('data-description');
+                document.getElementById('description').style.display = 'block';
+            });
+            item.addEventListener('mouseout', event => {
+                document.getElementById('description').style.display = 'none';
+            });
+        });
+    </script>
 </body>
 </html>
