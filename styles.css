@@ -12,11 +12,6 @@ header {
     color: white;
     padding: 1rem 0;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
 }
 nav ul {
     list-style: none;
@@ -31,9 +26,16 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    position: relative;
+}
+.description {
+    display: none;
+    font-style: italic;
+    color: white;
+    text-align: center;
 }
 main {
-    padding-top: 5rem; /* Adjust padding to account for fixed header */
+    padding-top: 2rem;
 }
 section {
     padding: 2rem;
@@ -67,4 +69,22 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width
+    width: 100%;
+}
+.portfolio-item button, .personal-project-item button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.portfolio-item button:hover, .personal-project-item button:hover {
+    background-color: #444;
+}
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #222;
+    color: white;
+}
