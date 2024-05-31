@@ -88,3 +88,16 @@ footer {
     background-color: #222;
     color: white;
 }
+
+/* New styles for the section header */
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.section-header h2 {
+    margin-right: 1rem;
+}
+.section-header img {
+    max-height: 40px; /* Adjust as needed */
+}
