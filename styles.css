@@ -109,6 +109,6 @@ footer {
 }
 .centered-image img {
     width: 40%; /* Reduced width to 40% */
+    max-width: 200px; /* Ensure the image doesn't exceed 200px in width */
     height: auto;
-    max-width: 300px; /* Ensure the image doesn't exceed 300px in width */
 }
