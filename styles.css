@@ -101,3 +101,13 @@ footer {
 .section-header img {
     max-height: 40px; /* Adjust as needed */
 }
+
+/* New styles for centered image */
+.centered-image {
+    text-align: center;
+    margin: 1rem 0;
+}
+.centered-image img {
+    max-width: 100%;
+    height: auto;
+}
