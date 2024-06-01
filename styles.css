@@ -108,6 +108,6 @@ footer {
     margin: 1rem 0;
 }
 .centered-image img {
-    max-width: 100%;
+    max-width: 40%; /* Reduced size to 60% smaller */
     height: auto;
 }
